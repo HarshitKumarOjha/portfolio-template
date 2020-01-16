@@ -1,0 +1,229 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Esteban', serif;
+}
+
+.font-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.demo a {
+    position: relative;
+    left: 0px;
+    top: 100px;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #ffffff;
+    font: normal 700 20px/1 'Montserrat', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+
+.demo a:hover {
+    opacity: .5;
+}
+
+#showcase a {
+    padding-top: 70px;
+}
+
+#showcase a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb05 1.5s infinite;
+    animation: sdb05 1.5s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb05 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+@keyframes sdb05 {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+.blurb h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1d1d1d;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.blurb h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1d1d1d;
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+
+.blurb p {
+    color: #1d1d1d;
+    font-family: 'Esteban', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.content {
+    margin-bottom: 70px;
+}
+
+#mainNavbar {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    color: #1d1d1d;
+    font-size: 1.3rem;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #000000;
+}
+
+#mainNavbar .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    color: #1d1d1d;
+    font-weight: 500;
+    font-size: 1.6em;
+}
+
+.navbar-branda {
+    font-family: 'Montserrat', sans-serif;
+    color: #1d1d1d;
+    letter-spacing: 5px;
+    margin-top: 0.06em;
+    font-weight: 400;
+    font-size: 1.6em;
+}
+
+.navbar-branda:hover {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 100;
+    font-size: 1.6em;
+}
+
+#headingGroup span {
+    color: #EA1C2C;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.911);
+    transition: background 1000ms;
+    background-color: rgba(255, 255, 255, 0.062);
+    backdrop-filter: blur(20px);
+}
+
+#showcase {
+    background: url(../imgs/showcase.jpg) center/cover no-repeat;
+    min-height: 1080px;
+    position: relative;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+}
+
+.icon {
+    filter: opacity(85%);
+}
+
+.icon:hover {
+    filter: opacity(100%);
+}
+
+.c-link {
+    color: #6d6c6c;
+    text-decoration: none;
+}
+
+.c-link:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.black {
+    background-color: #1d1d1d;
+}
+
+.lead {
+    margin-bottom: 5px;
+}
+
+.copyright-a {
+    color: #535353;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.6875rem;
+    font-weight: 500;
+}
+
+.copyright-ax {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.social-a {
+    color: #b4b4b4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.6875rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1280px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}
